@@ -157,6 +157,10 @@ forever(function () {
             ...................bbbbddddb3ba.
             .......................bbbaaaa..
             `, 50, -15)
+    } else if (controller.B.isPressed()) {
+        game.splash("B")
+    } else if (controller.up.isPressed()) {
+        game.showLongText("up", DialogLayout.Bottom)
     } else {
         projectile = sprites.createProjectileFromSide(img`
             . . . . . . . 6 . . . . . . . . 
